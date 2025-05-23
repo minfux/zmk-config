@@ -17,11 +17,11 @@
 				// │   ESC   │    Q    │    W    │    E    │    R    │    T    │    │    Y    │    U    │    I    │    O    │    P    │   BSPC   │
     				&kp ESC     &kp Q     &kp W     &kp E     &kp R     &kp T         &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  CTRL   │    A    │    S    │    D    │    F    │    G    │    │    H    │    J    │    K    │    L    │   .     │    CTRL  │
-				    &kp LCTRL  &kp A     &kp S     &kp D     &kp F     &kp G           &kp H     &kp J     &kp K     &kp L   &kp DOT   &kp RCTRL
+				// │  SHFT   │    A    │    S    │    D    │    F    │    G    │    │    H    │    J    │    K    │    L    │   .     │    CTRL  │
+				    &kp LSHFT  &kp A     &kp S     &kp D     &kp F     &kp G           &kp H     &kp J     &kp K     &kp L   &kp DOT   &kp RCTRL
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  SHFT   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    BKT  │   ,     │   SHIFT  │
-				    &kp LSHFT   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M  &kp SEMI   &kp LBKT  &kp COMMA &kp RSHIFT
+				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    BKT  │   ,     │   SHIFT  │
+				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M  &kp SEMI   &kp LBKT  &kp COMMA &kp RSHIFT
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   GUI   │   SPC   │   LWR   │    │   RSE   │   ENT   │   ALT   │
 				                                 &kp LGUI     &kp SPACE  &to 1       &to 2    &kp RET    &kp RALT
@@ -35,11 +35,11 @@
 				// │   TAB   │    1    │    2    │    3    │    4    │    5    │    │    6    │    7    │    8    │    9    │    0    │   BSPC   │
 				    &kp TAB     &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  BTCLR  │  BT1    │  BT2    │  BT3    │  BT4    │  BT5    │    │  LEFT   │  DOWN   │   UP    │  RIGHT  │         │          │
-				  &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &trans
+				// │  CTRL   │  BT1    │  BT2    │  BT3    │  BT4    │  BT5    │    │  LEFT   │  DOWN   │   UP    │  RIGHT  │         │          │
+				  &bt LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans   &trans
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  SHFT   │         │         │         │         │         │    │         │         │         │         │         │          │
-				    &kp LSHFT  &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans    &trans    &trans    &trans
+				// │  SHFT   │  BTCLR  │         │         │         │         │    │         │         │         │         │         │          │
+				    &kp LSHFT &bt BT_CLR  &trans    &trans    &trans    &trans        &trans    &trans    &trans    &trans    &trans    &trans
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   GUI   │    SPC  │   LWR   │    │   RSE   │   ENT   │   ALT   │
 				                                 &kp LGUI   &kp SPACE   &to 2    	  &to 0     &kp RET   &kp RALT
@@ -53,11 +53,11 @@
 				// │   TAB   │   !     │   @     │   #     │   $     │   %     │    │   ^     │   &     │   *     │   (     │   )     │   BSPC   │
 				    &kp TAB     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp BSPC
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  CTRL   │         │         │         │         │         │    │   -     │   =     │   [     │   ]     │   \     │   `      │
-				    &kp LCTRL  &trans    &trans    &trans    &trans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+				// │  SHFT   │         │         │         │         │         │    │   -     │   =     │   [     │   ]     │   \     │   `      │
+				    &kp LSHFT  &trans    &trans    &trans    &trans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  SHFT   │         │         │         │         │         │    │   _     │   +     │   {     │   }     │   |     │   ~      │
-				    &kp LSHFT  &trans    &trans    &trans    &trans    &trans        &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+				// │   CTRL  │         │         │         │         │         │    │   _     │   +     │   {     │   }     │   |     │   ~      │
+				    &kp LCTRL  &trans    &trans    &trans    &trans    &trans        &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   GUI   │   SPC   │   LWR   │    │   RSE   │   ENT   │   ALT   │
 				                                  &kp LGUI   &kp SPACE &to 0          &to 1     &kp RET   &kp RALT
