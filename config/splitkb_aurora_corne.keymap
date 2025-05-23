@@ -69,7 +69,7 @@
 				    &kp LSHFT  &kp A     &kp S     &kp D     &kp F     &kp G           &kp H     &kp J     &kp K     &kp L   &kp DOT   &kp RSHFT
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
 				// │  CTRL   │    1    │    2    │    3    │    4    │    B    │    │    N    │    M    │    /    │    Ä    │   ,     │   CTRL   │
-				    &kp LCTRL   &kp N1     &kp N2   &kp N3   &kp N4     &kp B          &kp N     &kp M  &kp FSLH   &kp fina  &kp COMMA &kp RCTRL
+				    &kp LCTRL   &kp N1     &kp N2   &kp N3   &kp N4     &kp B          &kp N     &kp M  &kp FSLH   &kp APOS  &kp COMMA &kp RCTRL
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   TAB   │   RSE   │   SPC   │    │   ENT   │   LWR   │   ALT   │
 				                                 &kp TAB     &to 3  &kp SPACE       &kp RET     &to 1    &kp RALT
