@@ -3,41 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-	behaviors {
-		unicode_ä: unicode {
-			compatible = "zmk,behavior-unicode";
-			label = "ä";
-			unicode = <0x00E4>;
-		};
-		unicode_Ä: unicode {
-			compatible = "zmk,behavior-unicode";
-			label = "Ä";
-			unicode = <0x00C4>;
-		};
-		unicode_ö: unicode {
-			compatible = "zmk,behavior-unicode";
-			label = "ö";
-			unicode = <0x00F6>;
-		};
-		unicode_Ö: unicode {
-			compatible = "zmk,behavior-unicode";
-			label = "Ö";
-			unicode = <0x00D6>;
-		};
-		fina: fina {
-			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <0>;
-			bindings = <&unicode_ä>, <&unicode_Ä>;
-			mods = <(MOD_LSFT|MOD_RSFT)>;
-		};
-		fino: fino {
-			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <0>;
-			bindings = <&unicode_ö>, <&unicode_Ö>;
-			mods = <(MOD_LSFT|MOD_RSFT)>;
-		};
-	};
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
