@@ -42,7 +42,7 @@
 				    &kp LSHFT  &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans    &trans    &trans    &trans
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   GUI   │    SPC  │   LWR   │    │   RSE   │   ENT   │   ALT   │
-				                                 &kp LGUI   &kp SPACE   &to 1    	  &to 2     &kp RET   &kp RALT
+				                                 &kp LGUI   &kp SPACE   &to 2    	  &to 0     &kp RET   &kp RALT
 				//                               └─────────┴─────────┴─────────┘    └─────────┴─────────┴─────────┘
 			>;
         };
@@ -60,7 +60,7 @@
 				    &kp LSHFT  &trans    &trans    &trans    &trans    &trans        &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   GUI   │   SPC   │   LWR   │    │   RSE   │   ENT   │   ALT   │
-				                                  &kp LGUI   &kp SPACE &to 1          &to 2     &kp RET   &kp RALT
+				                                  &kp LGUI   &kp SPACE &to 0          &to 1     &kp RET   &kp RALT
 				//                               └─────────┴─────────┴─────────┘    └─────────┴─────────┴─────────┘
             >;
         };
