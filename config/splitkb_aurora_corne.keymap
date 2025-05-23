@@ -20,8 +20,8 @@
 				// │  SHFT   │    A    │    S    │    D    │    F    │    G    │    │    H    │    J    │    K    │    L    │   .     │    CTRL  │
 				    &kp LSHFT  &kp A     &kp S     &kp D     &kp F     &kp G           &kp H     &kp J     &kp K     &kp L   &kp DOT   &kp RCTRL
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    BKT  │   ,     │   SHIFT  │
-				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M  &kp SEMI   &kp LBKT  &kp COMMA &kp RSHIFT
+				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    '    │   ,     │   SHIFT  │
+				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M  &kp SEMI   &kp APOS  &kp COMMA &kp RSHIFT
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   GUI   │   SPC   │   LWR   │    │   RSE   │   ENT   │   ALT   │
 				                                 &kp LGUI     &kp SPACE  &to 1       &to 2    &kp RET    &kp RALT
