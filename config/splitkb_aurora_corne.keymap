@@ -4,13 +4,16 @@
 
 / {
 	behaviors {
+		uc: uc {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <1>;
+        };
         uml_a: uml_a {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&uc 0x00E4 &uc 0x00C4>; // ä and Ä
             mods = <(MOD_LSFT|MOD_RSFT)>;      // Shift triggers upper version
         };
-
         uml_o: uml_o {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
