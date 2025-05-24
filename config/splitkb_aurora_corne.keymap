@@ -4,6 +4,19 @@
 
 / {
     keymap {
+		behaviors {
+        	a_umlaut: a_umlaut_macro {
+        	    compatible = "zmk,behavior-macro";
+        	    #binding-cells = <0>;
+        	    bindings = <&kp SQT>, <&kp A>; // " + a → ä
+        	};
+        	o_umlaut: o_umlaut_macro {
+        	    compatible = "zmk,behavior-macro";
+        	    #binding-cells = <0>;
+        	    bindings = <&kp SQT>, <&kp O>; // " + o → ö
+        	};
+		};
+
         compatible = "zmk,keymap";
         default_layer {
 			bindings = <
@@ -15,7 +28,7 @@
 				    &kp LSHFT  &kp A     &kp S      &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L    &kp DOT   &kp RSHFT
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
 				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    '    │   ,     │   CTRL   │
-				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M    &kp SEMI   &kp APOS &kp COMMA &kp RCTRL
+				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M    &o_umlaut &a_umlaut &kp COMMA &kp RCTRL
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   META  │   SPC   │   RSE   │    │   LWR   │   ENT   │   BSPC  │
 				                                  &kp LMETA &kp SPACE   &mo 2          &mo 1    &kp RET   &kp BSPC
