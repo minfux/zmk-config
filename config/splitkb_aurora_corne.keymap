@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-	behaviors {
+    behaviors {
         uml_a: uml_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -11,7 +11,7 @@
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8
+                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8 // ä = ALT+0228
                 &macro_release &kp LALT
             >;
         };
@@ -23,7 +23,7 @@
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6
+                &macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6 // Ä = ALT+0196
                 &macro_release &kp LALT
             >;
         };
@@ -35,7 +35,7 @@
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6
+                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6 // ö = ALT+0246
                 &macro_release &kp LALT
             >;
         };
@@ -47,7 +47,7 @@
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4
+                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4 // Ö = ALT+0214
                 &macro_release &kp LALT
             >;
         };
@@ -65,7 +65,7 @@
 				    &kp LSHFT  &kp A     &kp S      &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L    &kp DOT   &kp RSHFT
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
 				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    '    │   ,     │   CTRL   │
-				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M  &uml_a &uml_A  &uml_o &uml_O &kp COMMA &kp RCTRL
+				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M  &sk &uml_a &uml_A  &sk &uml_o &uml_O &kp COMMA &kp RCTRL
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   META  │   SPC   │   RSE   │    │   LWR   │   ENT   │   BSPC  │
 				                                  &kp LMETA &kp SPACE   &mo 2          &mo 1    &kp RET   &kp BSPC
