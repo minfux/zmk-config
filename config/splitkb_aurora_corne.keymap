@@ -53,8 +53,8 @@
 				// │   ?     │    <    │    >    │    _    │    \    │   *     │    │   -     │   +     │   {     │   }     │   |     │   RBKT   │
 				    &kp QMARK  &kp LT    &kp GT   &kp UNDER  &kp BSLH &kp ASTRK      &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE &kp RBKT
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
-				//                               │   META  │  SPACE  │         │    │   TAB   │   ENT   │   BSPC  │
-				                                  &kp LMETA  &kp SPACE  &trans         &kp TAB  &kp RET   &kp BSPC
+				//                               │   META  │  SPACE  │         │    │         │   ENT   │   BSPC  │
+				                                  &kp LMETA  &kp SPACE  &trans         &trans   &kp RET   &kp BSPC
 				//                               └─────────┴─────────┴─────────┘    └─────────┴─────────┴─────────┘
             >;
         };
