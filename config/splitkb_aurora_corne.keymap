@@ -3,20 +3,20 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    keymap {
-		behaviors {
-        	a_umlaut: a_umlaut_macro {
-        	    compatible = "zmk,behavior-macro";
-        	    #binding-cells = <0>;
-        	    bindings = <&kp SQT>, <&kp A>; // " + a → ä
-        	};
-        	o_umlaut: o_umlaut_macro {
-        	    compatible = "zmk,behavior-macro";
-        	    #binding-cells = <0>;
-        	    bindings = <&kp SQT>, <&kp O>; // " + o → ö
+	behaviors {
+		a_umlaut: a_umlaut_macro {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp SQT>, <&kp A>; // " + a → ä
+		};
+		o_umlaut: o_umlaut_macro {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp SQT>, <&kp O>; // " + o → ö
         	};
 		};
 
+    keymap {
         compatible = "zmk,keymap";
         default_layer {
 			bindings = <
