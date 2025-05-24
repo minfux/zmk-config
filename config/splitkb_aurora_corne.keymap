@@ -4,43 +4,18 @@
 
 / {
 	behaviors {
-        // ===== Lowercase Umlauts =====
-        a_umlaut: a_umlaut_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp A>;  // " + a → ä
-        };
-        o_umlaut: o_umlaut_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp O>;  // " + o → ö
-        };
-
-        // ===== Uppercase Umlauts (Shift-Aware) =====
-        A_umlaut: A_umlaut_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp LS(A)>;  // " + Shift+A → Ä
-        };
-        O_umlaut: O_umlaut_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp LS(O)>;  // " + Shift+O → Ö
-        };
-
-        // ===== Shift-Aware Umlaut Behaviors =====
-        // (Automatically picks lowercase/uppercase based on Shift)
-        smart_a_umlaut: smart_a_umlaut {
+        uml_a: uml_a {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&a_umlaut>, <&A_umlaut>;  // ä or Ä
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Activates on Shift
+            bindings = <&uc 0x00E4 &uc 0x00C4>; // ä and Ä
+            mods = <(MOD_LSFT|MOD_RSFT)>;      // Shift triggers upper version
         };
-        smart_o_umlaut: smart_o_umlaut {
+
+        uml_o: uml_o {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&o_umlaut>, <&O_umlaut>;  // ö or Ö
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Activates on Shift
+            bindings = <&uc 0x00F6 &uc 0x00D6>; // ö and Ö
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -56,7 +31,7 @@
 				    &kp LSHFT  &kp A     &kp S      &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L    &kp DOT   &kp RSHFT
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
 				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    '    │   ,     │   CTRL   │
-				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N  &kp M  &smart_o_umlaut &smart_a_umlaut &kp COMMA &kp RCTRL
+				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M     &uml_o    &uml_a  &kp COMMA &kp RCTRL
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   META  │   SPC   │   RSE   │    │   LWR   │   ENT   │   BSPC  │
 				                                  &kp LMETA &kp SPACE   &mo 2          &mo 1    &kp RET   &kp BSPC
