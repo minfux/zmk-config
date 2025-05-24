@@ -6,52 +6,48 @@
 	behaviors {
         uml_a: uml_a {
             compatible = "zmk,behavior-macro";
-            label = "umlaut_a";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8  // ä: Alt+0228
+                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8
                 &macro_release &kp LALT
             >;
         };
 
         uml_A: uml_A {
             compatible = "zmk,behavior-macro";
-            label = "umlaut_A";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6  // Ä: Alt+0196
+                &macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6
                 &macro_release &kp LALT
             >;
         };
 
         uml_o: uml_o {
             compatible = "zmk,behavior-macro";
-            label = "umlaut_o";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6  // ö: Alt+0246
+                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6
                 &macro_release &kp LALT
             >;
         };
 
         uml_O: uml_O {
             compatible = "zmk,behavior-macro";
-            label = "umlaut_O";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings = <
                 &macro_press   &kp LALT
-                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4  // Ö: Alt+0214
+                &macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4
                 &macro_release &kp LALT
             >;
         };
