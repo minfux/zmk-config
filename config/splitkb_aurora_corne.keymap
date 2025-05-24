@@ -4,17 +4,45 @@
 
 / {
 	behaviors {
-		a_umlaut: a_umlaut_macro {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&kp SQT>, <&kp A>; // " + a → ä
-		};
-		o_umlaut: o_umlaut_macro {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&kp SQT>, <&kp O>; // " + o → ö
-        	};
-		};
+        // ===== Lowercase Umlauts =====
+        a_umlaut: a_umlaut_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp A>;  // " + a → ä
+        };
+        o_umlaut: o_umlaut_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp O>;  // " + o → ö
+        };
+
+        // ===== Uppercase Umlauts (Shift-Aware) =====
+        A_umlaut: A_umlaut_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp LS(A)>;  // " + Shift+A → Ä
+        };
+        O_umlaut: O_umlaut_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp LS(O)>;  // " + Shift+O → Ö
+        };
+
+        // ===== Shift-Aware Umlaut Behaviors =====
+        // (Automatically picks lowercase/uppercase based on Shift)
+        smart_a_umlaut: smart_a_umlaut {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&a_umlaut>, <&A_umlaut>;  // ä or Ä
+            mods = <(MOD_LSFT|MOD_RSFT)>;  // Activates on Shift
+        };
+        smart_o_umlaut: smart_o_umlaut {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&o_umlaut>, <&O_umlaut>;  // ö or Ö
+            mods = <(MOD_LSFT|MOD_RSFT)>;  // Activates on Shift
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
