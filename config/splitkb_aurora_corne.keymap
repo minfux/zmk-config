@@ -33,7 +33,7 @@
 				 &kp C_BRI_UP &kp C_BRI_DN &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp CAPS &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PG_DN &kp PG_UP
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
 				// │  BTCLR  │   BT1   │   BT2   │   BT3   │   BT4   │   BT5   │    │         │         │         │         │         │          │
-				    &kp BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans   &trans     &trans
+				    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans   &trans     &trans
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   SUPER │    SPC  │         │    │         │   ENT   │   BSPC  │
 				                                  &kp LGUI  &kp SPACE  &trans         &trans    &kp RET   &kp BSPC
