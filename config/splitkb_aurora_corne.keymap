@@ -11,11 +11,11 @@
 				// │   TAB   │    Q    │    W    │    E    │    R    │    T    │    │    Y    │    U    │    I    │    O    │    P    │   ALT    │
     				&kp TAB   &kp Q     &kp W      &kp E     &kp R     &kp T         &kp Y     &kp U     &kp I     &kp O     &kp P    &kp RALT
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  SHFT   │    A    │    S    │    D    │    F    │    G    │    │    H    │    J    │    K    │    L    │   .     │   SHFT   │
-				    &kp LSHFT  &kp A     &kp S      &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L    &kp DOT   &kp RSHFT
+				// │  SHFT   │    A    │    S    │    D    │    F    │    G    │    │    H    │    J    │    K    │    L    │   "     │   SHFT   │
+				    &kp LSHFT  &kp A     &kp S      &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L    &kp DQT &kp RSHFT
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ;    │    "    │   ,     │   CTRL   │
-				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M   &kp SEMI   &kp DQT  &kp COMMA  &kp RCTRL
+				// │  CTRL   │    Z    │    X    │    C    │    V    │    B    │    │    N    │    M    │    ,    │    .    │   ;     │   CTRL   │
+				    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M   &kp COMMA &kp DOT   &kp SEMI  &kp RCTRL
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   SUPER │   SPC   │   RSE   │    │   LWR   │   ENT   │   BSPC  │
 				                                  &kp LGUI  &kp SPACE   &mo 2          &mo 1    &kp RET   &kp BSPC
@@ -33,7 +33,7 @@
 				 &kp C_BRI_UP &kp C_BRI_DN &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp CAPS &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PG_DN &kp PG_UP
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
 				// │  BTCLR  │   BT1   │   BT2   │   BT3   │   BT4   │   BT5   │    │         │         │         │         │         │          │
-				    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans   &trans     &trans
+				    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &studio_unlock &trans &trans &trans &trans &trans
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │   SUPER │    SPC  │         │    │         │   ENT   │   BSPC  │
 				                                  &kp LGUI  &kp SPACE  &trans         &trans    &kp RET   &kp BSPC
