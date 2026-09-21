@@ -44,14 +44,14 @@
 		raise_layer {
 			bindings = <
 				// ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐    ┌─────────┬─────────┬─────────┬─────────┬─────────┬──────────┐
-				// │   CAPS  │   @     │   #     │   $     │   %     │   &     │    │    /    │    {    │    }    │   [     │   ]     │     ^    │
-				    &kp CAPS   &kp AT   &kp HASH  &kp DLLR  &kp PRCNT  &kp AMPS       &kp FSLH  &kp LBRC &kp RBRC   &kp LBKT  &kp RBKT  &kp CARET
+				// │    `    │    !    │    @    │    #    │    $    │    %    │    │    ^    │    &    │    *    │    (    │    )    │          │
+				    &kp GRAVE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &trans
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │   ESC   │    1    │    2    │    3    │    4    │   5     │    │   6     │   7     │   8     │   9     │   0     │     |    │
-				    &kp ESC  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5           &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &kp PIPE
+				// │   ESC   │    1    │    2    │    3    │    4    │    5    │    │    6    │    7    │    8    │    9    │    0    │    '     │
+				    &kp ESC    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp APOS
 				// ├─────────┴─────────┴─────────┴─────────┴─────────┴─────────┤    ├─────────┴─────────┴─────────┴─────────┴─────────┴──────────┤
-				// │         │    !    │    ?    │    _    │    ~    │         │    │    \    │   (     │   )     │   '     │   `     │     *    │
-				    &trans   &kp EXCL &kp QMARK &kp UNDER   &kp TILDE    &trans        &kp BSLH  &kp LPAR   &kp RPAR  &kp APOS &kp GRAVE   &kp ASTRK
+				// │         │    ~    │    |    │    \    │    _    │    ?    │    │    /    │    [    │    ]    │    {    │    }    │          │
+				    &trans     &kp TILDE &kp PIPE  &kp BSLH  &kp UNDER &kp QMARK      &kp FSLH  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &trans
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
 				//                               │         │         │         │    │    =    │   +     │   -     │
 				                                  &trans     &trans    &trans         &kp EQUAL &kp PLUS &kp MINUS
