@@ -35,8 +35,8 @@
 				// │         │         │         │         │         │         │    │         │         │         │         │         │          │
 				    &trans     &trans    &trans    &trans    &trans    &trans        &trans &trans    &trans    &trans &trans  &trans
 				// └─────────┴─────────┴─────────┬─────────┬─────────┬─────────┘    └─────────┬─────────┬─────────┬─────────┴─────────┴──────────┘
-				//                               │   BT1   │   BT2   │   BT3   │    │         │  BTCLR  │         │
-				                                  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &trans   &bt BT_CLR  &trans
+				//                               │   BT1   │   BT2   │   BT3   │    │         │         │  BTCLR  │
+				                                  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &trans   &trans   &bt BT_CLR
 				//                               └─────────┴─────────┴─────────┘    └─────────┴─────────┴─────────┘
 			>;
         };
